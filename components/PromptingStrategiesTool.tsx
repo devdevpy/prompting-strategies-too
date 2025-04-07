@@ -1,12 +1,12 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-import { Switch } from "@/components/ui/switch";
-import { Textarea } from "@/components/ui/textarea";
+import { Switch } from "../components/ui/switch";
+import { Textarea } from "../components/ui/textarea";
 
 const strategies = [
   { name: "Role-based prompting", level: "Основна", template: "Като [роля], обясни [тема] на [аудитория].", example: "Като UX дизайнер, обясни какво е интуитивен интерфейс на ученик в 10. клас." },
