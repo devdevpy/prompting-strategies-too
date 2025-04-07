@@ -1,5 +1,5 @@
 'use client';
-import PromptingStrategiesTool from '@/components/PromptingStrategiesTool';
+import PromptingStrategiesTool from '../components/PromptingStrategiesTool';
 
 export default function Page() {
   return (
