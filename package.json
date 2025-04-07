@@ -13,5 +13,10 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-select": "^1.0.4",
     "@radix-ui/react-switch": "^1.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/react": "^18.2.28",
+    "@types/node": "^18.18.6"
   }
 }
