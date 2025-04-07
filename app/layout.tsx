@@ -1,3 +1,5 @@
+import '../styles/globals.css'; // <--- Добави това на първия ред
+
 export const metadata = {
   title: "Prompting Strategies Tool",
   description: "Интерактивен инструмент за генериране на AI задания",
