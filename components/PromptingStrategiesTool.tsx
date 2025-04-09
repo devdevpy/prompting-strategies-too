@@ -9,11 +9,36 @@ import { Switch } from "../components/ui/switch";
 import { Textarea } from "../components/ui/textarea";
 
 const strategies = [
-  { name: "Role-based prompting", level: "Основна", template: "Като [роля], обясни [тема] на [аудитория].", example: "Като UX дизайнер, обясни какво е интуитивен интерфейс на ученик в 10. клас." },
-  { name: "Chain-of-thought prompting", level: "Основна", template: "Обясни [сложна тема], разсъждавайки стъпка по стъпка.", example: "Обясни как работи криптовалутата, разсъждавайки стъпка по стъпка." },
-  { name: "Few-shot prompting", level: "Основна", template: "Ето два примера. Създай трети в същия стил: ...", example: "Ето два анекдота за програмисти. Създай трети в същия стил: ..." },
-  { name: "Rewriting", level: "Основна", template: "Пренапиши този текст, за да звучи по-[стил].", example: "Пренапиши този параграф, за да звучи по-официално и уверено." },
-  { name: "Multi-agent prompting", level: "Напреднала", template: "AI1 защитава [теза], AI2 – опонира. Симулирай дебат с 3 рунда.", example: "AI1 защитава използването на реклами, AI2 – опонира с аргументи за органичен трафик. Симулирай дебат с 3 рунда." }
+  { name: "Стратегия 1", level: "Напреднала", template: "Шаблон за стратегия 1.", example: "Пример за стратегия 1." },
+  { name: "Стратегия 2", level: "Основна", template: "Шаблон за стратегия 2.", example: "Пример за стратегия 2." },
+  { name: "Стратегия 3", level: "Напреднала", template: "Шаблон за стратегия 3.", example: "Пример за стратегия 3." },
+  { name: "Стратегия 4", level: "Основна", template: "Шаблон за стратегия 4.", example: "Пример за стратегия 4." },
+  { name: "Стратегия 5", level: "Напреднала", template: "Шаблон за стратегия 5.", example: "Пример за стратегия 5." },
+  { name: "Стратегия 6", level: "Основна", template: "Шаблон за стратегия 6.", example: "Пример за стратегия 6." },
+  { name: "Стратегия 7", level: "Напреднала", template: "Шаблон за стратегия 7.", example: "Пример за стратегия 7." },
+  { name: "Стратегия 8", level: "Основна", template: "Шаблон за стратегия 8.", example: "Пример за стратегия 8." },
+  { name: "Стратегия 9", level: "Напреднала", template: "Шаблон за стратегия 9.", example: "Пример за стратегия 9." },
+  { name: "Стратегия 10", level: "Основна", template: "Шаблон за стратегия 10.", example: "Пример за стратегия 10." },
+  { name: "Стратегия 11", level: "Напреднала", template: "Шаблон за стратегия 11.", example: "Пример за стратегия 11." },
+  { name: "Стратегия 12", level: "Основна", template: "Шаблон за стратегия 12.", example: "Пример за стратегия 12." },
+  { name: "Стратегия 13", level: "Напреднала", template: "Шаблон за стратегия 13.", example: "Пример за стратегия 13." },
+  { name: "Стратегия 14", level: "Основна", template: "Шаблон за стратегия 14.", example: "Пример за стратегия 14." },
+  { name: "Стратегия 15", level: "Напреднала", template: "Шаблон за стратегия 15.", example: "Пример за стратегия 15." },
+  { name: "Стратегия 16", level: "Основна", template: "Шаблон за стратегия 16.", example: "Пример за стратегия 16." },
+  { name: "Стратегия 17", level: "Напреднала", template: "Шаблон за стратегия 17.", example: "Пример за стратегия 17." },
+  { name: "Стратегия 18", level: "Основна", template: "Шаблон за стратегия 18.", example: "Пример за стратегия 18." },
+  { name: "Стратегия 19", level: "Напреднала", template: "Шаблон за стратегия 19.", example: "Пример за стратегия 19." },
+  { name: "Стратегия 20", level: "Основна", template: "Шаблон за стратегия 20.", example: "Пример за стратегия 20." },
+  { name: "Стратегия 21", level: "Напреднала", template: "Шаблон за стратегия 21.", example: "Пример за стратегия 21." },
+  { name: "Стратегия 22", level: "Основна", template: "Шаблон за стратегия 22.", example: "Пример за стратегия 22." },
+  { name: "Стратегия 23", level: "Напреднала", template: "Шаблон за стратегия 23.", example: "Пример за стратегия 23." },
+  { name: "Стратегия 24", level: "Основна", template: "Шаблон за стратегия 24.", example: "Пример за стратегия 24." },
+  { name: "Стратегия 25", level: "Напреднала", template: "Шаблон за стратегия 25.", example: "Пример за стратегия 25." },
+  { name: "Стратегия 26", level: "Основна", template: "Шаблон за стратегия 26.", example: "Пример за стратегия 26." },
+  { name: "Стратегия 27", level: "Напреднала", template: "Шаблон за стратегия 27.", example: "Пример за стратегия 27." },
+  { name: "Стратегия 28", level: "Основна", template: "Шаблон за стратегия 28.", example: "Пример за стратегия 28." },
+  { name: "Стратегия 29", level: "Напреднала", template: "Шаблон за стратегия 29.", example: "Пример за стратегия 29." },
+  { name: "Стратегия 30", level: "Основна", template: "Шаблон за стратегия 30.", example: "Пример за стратегия 30." }
 ];
 
 export default function PromptingStrategiesTool() {
@@ -51,14 +76,14 @@ export default function PromptingStrategiesTool() {
 
 **Инструкции:** Използвай следния шаблон като основа:
 
-\`\`\`
+\\`\\`\\`
 ${selected.template}
-\`\`\`
+\\`\\`\\`
 
 **Примерна реализация:**
-\`\`\`
+\\`\\`\\`
 ${selected.example || "[добавете ваш пример]"}
-\`\`\`
+\\`\\`\\`
 `;
     setGeneratedTask(task);
     setTaskHistory((prev) => [{ title, content: task }, ...prev]);
@@ -166,8 +191,8 @@ ${selected.example || "[добавете ваш пример]"}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div className="text-sm font-medium text-slate-800">{item.title}</div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" onClick={() => setGeneratedTask(item.content)}>Зареди</Button>
-                    <Button size="sm" variant="destructive" onClick={() => deleteTask(index)}>Изтрий</Button>
+                    <Button className="h-8 px-3 bg-white border text-slate-800" onClick={() => setGeneratedTask(item.content)}>Зареди</Button>
+                    <Button className="h-8 px-3 bg-red-600 text-white" onClick={() => deleteTask(index)}>Изтрий</Button>
                   </div>
                 </div>
               </CardContent>
@@ -178,4 +203,3 @@ ${selected.example || "[добавете ваш пример]"}
     </div>
   );
 }
-
