@@ -76,14 +76,14 @@ export default function PromptingStrategiesTool() {
 
 **Инструкции:** Използвай следния шаблон като основа:
 
-\`\`\`
+
 ${selected.template}
-\`\`\`
+
 
 **Примерна реализация:**
-\`\`\`
+
 ${selected.example || "[добавете ваш пример]"}
-\`\`\`
+
 `;
     setGeneratedTask(task);
     setTaskHistory((prev) => [{ title, content: task }, ...prev]);
